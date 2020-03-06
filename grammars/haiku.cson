@@ -1,0 +1,42 @@
+name: 'Haiku'
+scopeName: 'haiku'
+type: 'tree-sitter'
+parser: 'tree-sitter-haiku'
+fileTypes: ['hk', 'haiku']
+
+scopes:
+    '''
+    atom > camelIdentifier,
+    Block > camelIdentifier,
+    Block > pascalIdentifier
+    ''': 'entity.name.function'
+
+    '''
+    "*",
+    "/",
+    "+",
+    "-"
+    ''': 'keyword.operator'
+
+folds: [
+    {
+        start: {type: '"("', index: 0},
+        end: {type: '")"', index: -1}
+    }
+    {
+        start: {type: '"{"', index: 0},
+        end: {type: '"}"', index: -1}
+    }
+]
+
+comments: [
+    {
+        start: '/* '
+        end: ' */'
+    }
+
+    {
+        start: '// '
+    }
+]
+
