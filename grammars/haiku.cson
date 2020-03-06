@@ -5,11 +5,16 @@ parser: 'tree-sitter-haiku'
 fileTypes: ['hk', 'haiku']
 
 scopes:
-    '''
-    atom > camelIdentifier,
-    Block > camelIdentifier,
-    Block > pascalIdentifier
-    ''': 'entity.name.function'
+    'Block > Decorator > decoratorIdentifier': 'entity.name.function.decorator'
+    'Block > camelIdentifier': 'entity.name.function'
+    'Block > pascalIdentifier': 'entity.name.function.decorator'
+
+    'Attribute > Decorator > decoratorIdentifier': 'entity.name.function.decorator'
+    'Attribute > camelIdentifier': 'entity.name.function'
+    'AttributeType > camelIdentifier': 'entity.name.function'
+    'AttributeType > pascalIdentifier': 'entity.name.function.decorator'
+
+    'atom > camelIdentifier': 'entity.name.function'
 
     '''
     "*",
