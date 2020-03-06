@@ -1,14 +1,18 @@
 {
   "name": "language-haiku",
   "version": "1.0.0",
-  "description": "",
+  "description": "Haiku",
+  "repository": "https://github.com/garciafido/language-haiku",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Fido García",
   "license": "ISC",
   "dependencies": {
     "tree-sitter-haiku": "^1.0.0"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.10.0"
   }
 }
