@@ -1,6 +1,6 @@
 {
   "name": "language-haiku",
-  "version": "1.2.2",
+  "version": "1.0.0",
   "description": "Haiku",
   "repository": "https://github.com/garciafido/language-haiku",
   "main": "index.js",
@@ -16,3 +16,4 @@
     "electron-rebuild": "^1.10.0"
   }
 }
+a
