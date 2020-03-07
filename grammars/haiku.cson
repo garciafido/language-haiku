@@ -25,12 +25,29 @@ scopes:
 
 folds: [
     {
-        start: {type: '"("', index: 0},
-        end: {type: '")"', index: -1}
+        type: 'comment'
     }
     {
-        start: {type: '"{"', index: 0},
-        end: {type: '"}"', index: -1}
+        type: ['jsx_element', 'template_string'],
+        start: {index: 0}
+        end: {index: -1}
+    }
+    {
+        type: 'jsx_self_closing_element'
+        start: {index: 1}
+        end: {index: -2}
+    }
+    {
+        start: {index: 0, type: '{'}
+        end: {index: -1, type: '}'}
+    }
+    {
+        start: {index: 0, type: '['}
+        end: {index: -1, type: ']'}
+    }
+    {
+        start: {index: 0, type: '('}
+        end: {index: -1, type: ')'}
     }
 ]
 
