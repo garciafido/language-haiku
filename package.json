@@ -12,8 +12,5 @@
   "dependencies": {
     "tree-sitter-haiku": "^1.0.0"
   },
-  "devDependencies": {
-    "electron-rebuild": "^1.10.0"
-  }
+  "devDependencies": {}
 }
-a
