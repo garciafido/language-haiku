@@ -18,18 +18,18 @@ scopes:
     'atom > pascalIdentifier': 'atom.identifier'
     'atom': 'atom.literal'
 
-    '''
-    "*",
-    "/",
-    "+",
-    "-"
-    ">",
-    ">=",
-    "<",
-    "<="
-    "=="
-    "!="
-    ''': 'keyword.operator'
+//     '''
+//     "*",
+//     "/",
+//     "+",
+//     "-"
+//     ">",
+//     ">=",
+//     "<",
+//     "<="
+//     "=="
+//     "!="
+//     ''': 'keyword.operator'
 
 folds: [
     {
