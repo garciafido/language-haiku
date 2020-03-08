@@ -1,5 +1,5 @@
 name: 'Haiku'
-scopeName: 'haiku'
+scopeName: 'source.haiku'
 type: 'tree-sitter'
 parser: 'tree-sitter-haiku'
 fileTypes: ['hk', 'haiku']
