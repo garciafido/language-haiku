@@ -4,6 +4,24 @@ type: 'tree-sitter'
 parser: 'tree-sitter-haiku'
 fileTypes: ['hk', 'haiku']
 
+folds: [
+    {
+        type: 'comment'
+    }
+    {
+        start: {index: 0, type: '{'}
+        end: {index: -1, type: '}'}
+    }
+    {
+        start: {index: 0, type: '['}
+        end: {index: -1, type: ']'}
+    }
+    {
+        start: {index: 0, type: '('}
+        end: {index: -1, type: ')'}
+    }
+]
+
 scopes:
     'Block > Decorator > decoratorIdentifier': 'block.decorator'
     'Block > camelIdentifier': 'block.type'
@@ -30,34 +48,6 @@ scopes:
     "=="
     "!="
     ''': 'keyword.operator'
-
-folds: [
-    {
-        type: 'comment'
-    }
-    {
-        type: ['jsx_element', 'template_string'],
-        start: {index: 0}
-        end: {index: -1}
-    }
-    {
-        type: 'jsx_self_closing_element'
-        start: {index: 1}
-        end: {index: -2}
-    }
-    {
-        start: {index: 0, type: '{'}
-        end: {index: -1, type: '}'}
-    }
-    {
-        start: {index: 0, type: '['}
-        end: {index: -1, type: ']'}
-    }
-    {
-        start: {index: 0, type: '('}
-        end: {index: -1, type: ')'}
-    }
-]
 
 comments: [
     {
