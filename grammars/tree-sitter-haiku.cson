@@ -9,8 +9,7 @@ scopes:
     'Block > Decorator > decoratorIdentifier': 'block.decorator'
     'Block > camelIdentifier': 'block.type'
     'Block > pascalIdentifier': 'block.name'
-#
-#     'Property > Decorator > decoratorIdentifier': 'property.decorator'
+    'Property > Decorator > decoratorIdentifier': 'property.decorator'
 #     'Property > camelIdentifier': 'property.name'
 #     'PropertyType > camelIdentifier': 'property.type.basic'
 #     'PropertyType > pascalIdentifier': 'property.type'
