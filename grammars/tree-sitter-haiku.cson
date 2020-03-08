@@ -6,17 +6,21 @@ fileTypes: ['hk', 'haiku']
 
 scopes:
     'program': 'source.hk'
+
     'Block > Decorator > decoratorIdentifier': 'block.decorator'
     'Block > camelIdentifier': 'block.type'
     'Block > pascalIdentifier': 'block.name'
+
     'Property > Decorator > decoratorIdentifier': 'property.decorator'
     'Property > camelIdentifier': 'property.name'
     'PropertyType > camelIdentifier': 'property.type.basic'
     'PropertyType > pascalIdentifier': 'property.type'
+
     'atom > camelIdentifier': 'atom.identifier'
     'atom > pascalIdentifier': 'atom.identifier'
     'atom': 'atom.literal'
 
+    '"*"': 'keyword.operator'
 #     '''
 #     "*",
 #     "/",
