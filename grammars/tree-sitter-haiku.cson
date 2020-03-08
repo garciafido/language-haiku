@@ -15,8 +15,7 @@ scopes:
     'PropertyType > pascalIdentifier': 'property.type'
     'atom > camelIdentifier': 'atom.identifier'
     'atom > pascalIdentifier': 'atom.identifier'
-
-#     'atom': 'atom.literal'
+    'atom': 'atom.literal'
 
 #     '''
 #     "*",
