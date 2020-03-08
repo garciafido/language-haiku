@@ -5,22 +5,31 @@ parser: 'tree-sitter-haiku'
 fileTypes: ['hk', 'haiku']
 
 scopes:
-    'Block > Decorator > decoratorIdentifier': 'entity.name.function.decorator'
-    'Block > camelIdentifier': 'entity.name.function'
-    'Block > pascalIdentifier': 'entity.name.function.decorator'
+    'Haiku': 'source.tree'
+    'Block > Decorator > decoratorIdentifier': 'block.decorator'
+    'Block > camelIdentifier': 'block.type'
+    'Block > pascalIdentifier': 'block.name'
 
-    'Attribute > Decorator > decoratorIdentifier': 'entity.name.function.decorator'
-    'Attribute > camelIdentifier': 'entity.name.function'
-    'AttributeType > camelIdentifier': 'entity.name.function'
-    'AttributeType > pascalIdentifier': 'entity.name.function.decorator'
+    'Property > Decorator > decoratorIdentifier': 'property.decorator'
+    'Property > camelIdentifier': 'property.name'
+    'PropertyType > camelIdentifier': 'property.type.basic'
+    'PropertyType > pascalIdentifier': 'property.type'
 
-    'atom > camelIdentifier': 'entity.name.function'
+    'atom > camelIdentifier': 'atom.identifier'
+    'atom > pascalIdentifier': 'atom.identifier'
+    'atom': 'atom.literal'
 
     '''
     "*",
     "/",
     "+",
     "-"
+    ">",
+    ">=",
+    "<",
+    "<="
+    "=="
+    "!="
     ''': 'keyword.operator'
 
 folds: [
