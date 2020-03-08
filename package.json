@@ -2,7 +2,7 @@
   "name": "language-haiku",
   "version": "1.0.0",
   "description": "Haiku",
-  "repository": "https://github.com/garciafido/language-haiku",
+  "repository": "https://github.com/atom/language-haiku",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,10 @@
   "dependencies": {
     "tree-sitter-haiku": "^1.0.0"
   },
-  "devDependencies": {}
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "devDependencies": {
+
+  }
 }

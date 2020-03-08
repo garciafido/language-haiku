@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle haiku",
+        "command": "haiku:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "haiku",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "haiku:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

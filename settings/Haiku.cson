@@ -1,4 +1,4 @@
-'.source.ts':
+'.source.haiku':
   'editor':
     'commentStart': '// '
     'foldEndPattern': '^\\s*\\}|^\\s*\\]|^\\s*\\)'

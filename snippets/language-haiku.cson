@@ -1,0 +1,28 @@
+'.source.hk, .source.haiku':
+  'Entity Definition':
+    prefix: 'entity'
+    body: """
+      entity ${1:name} {
+      }
+    """
+    description: 'Entity Definition'
+  'Workflow Definition':
+    prefix: 'workflow'
+    body: """
+      workflow ${1:name} {
+      }
+    """
+    description: 'EntiWorkflowty Definition'
+  'Property':
+    prefix: 'prop'
+    body: """
+      ${1:value}() : ${2:string}
+    """
+    description: 'Property'
+  'Reference property':
+    prefix: 'rprop'
+    body: """
+      ${1:value} : <ref>${2:string} {
+      }
+    """
+    description: 'Reference property'
