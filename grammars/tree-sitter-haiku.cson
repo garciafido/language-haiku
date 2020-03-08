@@ -16,20 +16,20 @@ scopes:
 #
     'atom > camelIdentifier': 'atom.identifier'
     'atom > pascalIdentifier': 'atom.identifier'
-    'atom': 'atom.literal'
+#     'atom': 'atom.literal'
 
-//     '''
-//     "*",
-//     "/",
-//     "+",
-//     "-"
-//     ">",
-//     ">=",
-//     "<",
-//     "<="
-//     "=="
-//     "!="
-//     ''': 'keyword.operator'
+    '''
+    "*",
+    "/",
+    "+",
+    "-"
+    ">",
+    ">=",
+    "<",
+    "<="
+    "=="
+    "!="
+    ''': 'keyword.operator'
 
 folds: [
     {
