@@ -1,6 +1,6 @@
 {
   "name": "language-haiku",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Haiku",
   "repository": "https://github.com/atom/language-haiku",
   "main": "index.js",
@@ -15,7 +15,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
