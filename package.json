@@ -1,6 +1,6 @@
 {
   "name": "language-haiku",
-  "version": "1.18.0",
+  "version": "1.19.0",
   "description": "Haiku",
   "repository": "https://github.com/garciafido/language-haiku",
   "main": "index.js",
