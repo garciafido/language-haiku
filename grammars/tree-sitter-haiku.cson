@@ -6,7 +6,7 @@ fileTypes: ['hk', 'haiku']
 
 scopes:
     'program': 'source.hk'
-#     'Block > Decorator > decoratorIdentifier': 'block.decorator'
+    'Block > Decorator > decoratorIdentifier': 'block.decorator'
 #     'Block > camelIdentifier': 'block.type'
 #     'Block > pascalIdentifier': 'block.name'
 #
