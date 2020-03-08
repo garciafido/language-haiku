@@ -2,7 +2,7 @@
   "name": "language-haiku",
   "version": "1.0.1",
   "description": "Haiku",
-  "repository": "https://github.com/atom/language-haiku",
+  "repository": "https://github.com/garciafido/language-haiku",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

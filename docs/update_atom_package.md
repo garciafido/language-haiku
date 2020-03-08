@@ -8,6 +8,7 @@ The tag must match the regular expression ^v\d+\.\d+\.\d+ and the part after the
 Execute git push --follow-tags
 Execute apm publish --tag tagname where tagname must match the name of the tag created in the above step
 
-Example:
+Examples:
 
     apm publish --tag v1.0.0
+    apm unpublish language-haiku@1.0.0
