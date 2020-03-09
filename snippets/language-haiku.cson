@@ -9,11 +9,11 @@
   'Workflow Definition':
     prefix: 'work'
     body: """
-      workflow ${1:name} {
+      workflow $1 {
         transitions: Transitions {
             init: Transition {
-                from: ${2:from}
-                to: ${3:to}
+                from: $2
+                to: $0
             }
         }
       }
@@ -37,7 +37,6 @@
       tabs: Tabs {
         ${1:name} : Tab {
             label: '$1'
-
         }
       }
     """
