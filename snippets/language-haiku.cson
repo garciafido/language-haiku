@@ -35,8 +35,8 @@
     prefix: 'tabs'
     body: """
       tabs: Tabs {
-        $1 : Tab {
-            label: '$1'
+        ${1:name} : Tab {
+            label: '$1.upperCase()'
         }
       }
     """
