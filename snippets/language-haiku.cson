@@ -16,13 +16,13 @@
   'Property':
     prefix: 'prop'
     body: """
-      ${1:value}() : ${2:string}
+      ${1:name} : ${2:type}
     """
     description: 'Property'
   'Reference property':
-    prefix: 'rprop'
+    prefix: 'prop'
     body: """
-      ${1:value} : <ref>${2:string} {
+      ${1:name} : <ref>${2:type} {
       }
     """
     description: 'Reference property'
