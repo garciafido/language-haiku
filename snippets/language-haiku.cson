@@ -2,19 +2,19 @@
   'Entity Definition':
     prefix: 'entity'
     body: """
-      entity ${1:name} {
+      entity $1 {
         $0
       }
     """
     description: 'Entity Definition'
   'Workflow Definition':
-    prefix: 'work'
+    prefix: 'workflow'
     body: """
-      workflow ${1:type_name} {
-        t: Transitions {
-            init: Transition {
-                from: ${2:from_state}
-                to: ${2:to_state}
+      workflow $1 {
+        ${2:transitions}: Transitions {
+            ${3:init}: Transition {
+                from: $4
+                to: $5
             }
             $0
         }
@@ -24,32 +24,33 @@
   'Property':
     prefix: 'prop'
     body: """
-      ${1:name} : ${2:type}
+      $1: $2
       $0
     """
     description: 'Property'
   'Reference property':
     prefix: 'ref'
     body: """
-      ${1:name} : <ref>${2:type}
+      $1: <ref>$2
       $0
     """
     description: 'Reference property'
   'Tabs':
     prefix: 'tabs'
     body: """
-      tabs: Tabs {
-        ${1:name} : Tab {
+      ${1:tabs}: Tabs {
+        ${1:main}: Tab {
             label: '$1'
+            $0
         }
-        $0
       }
     """
     description: 'Tabs'
   'Tab':
     prefix: 'tab'
     body: """
-        ${1:name} : Tab {
+        $1: Tab {
+            label: '$1'
             $0
         }
     """
