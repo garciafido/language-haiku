@@ -12,8 +12,8 @@ scopes:
     'block > pascal_identifier': 'block.name'
 
     'property > decorator > decorator_identifier': 'property.decorator'
-    'property > camel_identifier': 'keyword.control'
-    'property_type > camel_identifier': 'property.type.basic'
+    'property > camel_identifier': 'property.type.basic'
+    'property_type > camel_identifier': 'keyword.control'
     'property_type > pascal_identifier': 'property.type'
 
     'atom > camel_identifier': 'atom.identifier'
