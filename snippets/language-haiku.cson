@@ -11,8 +11,8 @@
     prefix: 'workflow'
     body: """
       workflow $1 {
-        ${2}: InitialState
-        ${3}: State
+        ${2:initialized}: InitialState
+        ${3:started}: State
         $0
 
         ${4:start}: Transition<${2:initialized}, ${3:started}>
