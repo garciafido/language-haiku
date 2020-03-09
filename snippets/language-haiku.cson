@@ -11,7 +11,7 @@
     body: """
       workflow ${1:name} {
         transitions: Transitions {
-            initial: Transition {
+            init: Transition {
                 from: ${2:from}
                 to: ${3:to}
             }
