@@ -7,18 +7,15 @@ fileTypes: ['hk', 'haiku']
 scopes:
     'program': 'source.hk'
 
-    'block > decorator > decorator_identifier': 'block.decorator'
     'block > camel_identifier': 'keyword.control'
-    'block > pascal_identifier': 'entity.name.tag'
+    'block > pascal_identifier': 'support.storage.type'
 
-    'property > decorator > decorator_identifier': 'property.decorator'
     'property > camel_identifier': 'entity.name.tag'
-    'property_type > camel_identifier': 'keyword.control'
-    'property_type > pascal_identifier': 'property.type'
+    'property_type > camel_identifier': 'support.storage.type'
+    'property_type > pascal_identifier': 'support.storage.type'
 
-    'atom > camel_identifier': 'atom.identifier'
-    'atom > pascal_identifier': 'atom.identifier'
-    'atom': 'atom.literal'
+    'generic_args > "<"': 'storage.modifier'
+    'generic_args > ">"': 'storage.modifier'
 
     'function_call > identifier': 'entity.name.function'
 
