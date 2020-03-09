@@ -34,8 +34,8 @@
   'Tabs':
     prefix: 'tabs'
     body: """
-      $0 : Tabs {
-        ${1:name} : Tab {
+      tabs: Tabs {
+        $1 : Tab {
             label: '$1'
         }
       }
