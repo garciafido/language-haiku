@@ -17,7 +17,7 @@ scopes:
     'generic_args > "<"': 'storage.modifier'
     'generic_args > ">"': 'storage.modifier'
 
-    'decorator -> decorator_identifier': 'constant.language'
+    'decorator > decorator_identifier': 'constant.language'
 
     'function_call > identifier': 'entity.name.function'
 
