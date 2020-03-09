@@ -11,13 +11,12 @@
     prefix: 'workflow'
     body: """
       workflow $1 {
-        ${2:transitions}: Transitions {
-            ${3:init}: Transition {
-                from: $4
-                to: $5
-            }
-            $0
+        states: States {
+            $3: State
+            $4: State
         }
+        ${2:init}: Transition<${3:initial}, ${4:start}>
+        $0
       }
     """
     description: 'Workflowty Definition'
