@@ -13,9 +13,9 @@
       workflow $1 {
         ${2:initial}: InitialState
         ${3:start}: State
-
-        ${4:init}: Transition<$2, $3>
         $0
+
+        ${4:init}: Transition<${2}, ${3}>
       }
     """
     description: 'Workflowty Definition'
