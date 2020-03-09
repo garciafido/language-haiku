@@ -10,9 +10,15 @@
     prefix: 'workflow'
     body: """
       workflow ${1:name} {
+        transitions: Transitions {
+            init: Transition {
+                from: ${2:from}
+                to: ${3:from}
+            }
+        }
       }
     """
-    description: 'EntiWorkflowty Definition'
+    description: 'Workflowty Definition'
   'Property':
     prefix: 'prop'
     body: """
@@ -20,9 +26,24 @@
     """
     description: 'Property'
   'Reference property':
-    prefix: 'prop'
+    prefix: 'ref'
     body: """
-      ${1:name} : <ref>${2:type} {
-      }
+      ${1:name} : <ref>${2:type}
     """
     description: 'Reference property'
+  'Tabs':
+    prefix: 'tabs'
+    body: """
+      ${1:name} : Tabs {
+        ${2:name} : Tab {
+        }
+      }
+    """
+    description: 'Tabs'
+  'Tab':
+    prefix: 'tab'
+    body: """
+        ${1:name} : Tab {
+        }
+    """
+    description: 'Tabs'
