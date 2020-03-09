@@ -11,11 +11,10 @@
     prefix: 'workflow'
     body: """
       workflow $1 {
-        states: States {
-            $3: State
-            $4: State
-        }
-        ${2:init}: Transition<${3:initial}, ${4:start}>
+        ${3}: InitialState
+        ${4}: State
+
+        ${2:init}: Transition<${3:initial}, ${4:started}>
         $0
       }
     """
