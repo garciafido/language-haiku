@@ -36,7 +36,8 @@
     body: """
       tabs: Tabs {
         ${1:name} : Tab {
-            label: '$1.upperCase()'
+            label: '$1'
+
         }
       }
     """
