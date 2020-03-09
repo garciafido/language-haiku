@@ -40,7 +40,7 @@
     body: """
       ${1:tabs}: Tabs {
         ${1:main}: Tab {
-            label: '$1'
+            label: '${1/(.+)/\\u$1/}'
             $0
         }
       }
