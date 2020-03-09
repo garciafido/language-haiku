@@ -9,16 +9,18 @@ scopes:
 
     'block > decorator > decorator_identifier': 'block.decorator'
     'block > camel_identifier': 'keyword.control'
-    'block > pascal_identifier': 'block.name'
+    'block > pascal_identifier': 'entity.name.tag'
 
     'property > decorator > decorator_identifier': 'property.decorator'
-    'property > camel_identifier': 'property.type.basic'
+    'property > camel_identifier': 'entity.name.tag'
     'property_type > camel_identifier': 'keyword.control'
     'property_type > pascal_identifier': 'property.type'
 
     'atom > camel_identifier': 'atom.identifier'
     'atom > pascal_identifier': 'atom.identifier'
     'atom': 'atom.literal'
+
+    'function_call > identifier': 'entity.name.function'
 
     '
     "*", "/", "+", "-",
