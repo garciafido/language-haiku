@@ -1,6 +1,6 @@
 '.source.hk, .source.haiku':
   'Entity Definition':
-    prefix: 'entity'
+    prefix: 'en'
     body: """
       entity $1 {
         $0
@@ -8,10 +8,10 @@
     """
     description: 'Entity Definition'
   'Workflow Definition':
-    prefix: 'workflow'
+    prefix: 'wo'
     body: """
       workflow $1 {
-        ${2:initialized}: InitialState
+        ${2:initialized}: State
         ${3:started}: State
         $0
 
@@ -20,7 +20,7 @@
     """
     description: 'Workflowty Definition'
   'Property':
-    prefix: 'prop'
+    prefix: 'pr'
     body: """
       $1: $2
       $0
@@ -34,7 +34,7 @@
     """
     description: 'Reference property'
   'Tabs':
-    prefix: 'tabs'
+    prefix: 'tbs'
     body: """
       ${1:tabs}: Tabs {
         @label('${2/(.+)/\\u$1/}')
@@ -45,7 +45,7 @@
     """
     description: 'Tabs'
   'Tab':
-    prefix: 'tab'
+    prefix: 'tb'
     body: """
         @label('${1/(.+)/\\u$1/}')
         $1: Tab {
