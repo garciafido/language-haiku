@@ -7,17 +7,17 @@ fileTypes: ['hk', 'haiku']
 scopes:
     'program': 'source.hk'
 
-    'Block > Decorator > decoratorIdentifier': 'block.decorator'
-    'Block > camelIdentifier': 'block.type'
-    'Block > pascalIdentifier': 'block.name'
+    'block > decorator > decorator_identifier': 'block.decorator'
+    'block > camel_identifier': 'keyword.control'
+    'block > pascal_identifier': 'block.name'
 
-    'Property > Decorator > decoratorIdentifier': 'property.decorator'
-    'Property > camelIdentifier': 'property.name'
-    'PropertyType > camelIdentifier': 'property.type.basic'
-    'PropertyType > pascalIdentifier': 'property.type'
+    'property > decorator > decorator_identifier': 'property.decorator'
+    'property > camel_identifier': 'keyword.control'
+    'property_type > camel_identifier': 'property.type.basic'
+    'property_type > pascal_identifier': 'property.type'
 
-    'atom > camelIdentifier': 'atom.identifier'
-    'atom > pascalIdentifier': 'atom.identifier'
+    'atom > camel_identifier': 'atom.identifier'
+    'atom > pascal_identifier': 'atom.identifier'
     'atom': 'atom.literal'
 
     '
