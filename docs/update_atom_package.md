@@ -12,3 +12,5 @@ Examples:
 
     apm publish --tag v1.0.0
     apm unpublish language-haiku@1.0.0
+Or:
+    apm publish minor

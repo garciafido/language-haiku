@@ -14,8 +14,8 @@ scopes:
     'property_type > camel_identifier': 'support.storage.type'
     'property_type > pascal_identifier': 'support.storage.type'
 
-    'generic_args > "<"': 'storage.modifier'
-    'generic_args > ">"': 'storage.modifier'
+    'generic > "<"': 'storage.modifier'
+    'generic > ">"': 'storage.modifier'
 
     'decorator > decorator_identifier': 'constant.language'
 
