@@ -15,6 +15,5 @@ Examples:
 
 Or:
 
-    npm install node-gyp
-    npm install
     apm publish minor
+    # luego Atom con Python 2.7 , no con 3.7 
