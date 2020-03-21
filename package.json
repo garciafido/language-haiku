@@ -10,7 +10,7 @@
   "author": "Fido García",
   "license": "MIT",
   "dependencies": {
-    "tree-sitter-haiku": ">=1.0.7"
+    "tree-sitter-haiku": ">=1.0.8"
   },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
