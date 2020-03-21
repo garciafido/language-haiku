@@ -1,10 +1,10 @@
 {
   "name": "language-haiku",
-  "version": "1.60.0",
+  "version": "1.61.0",
   "description": "Haiku",
   "repository": "https://github.com/garciafido/language-haiku",
   "main": "index.js",
-   "scripts": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fido García",
