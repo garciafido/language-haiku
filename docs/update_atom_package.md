@@ -14,6 +14,17 @@ Examples:
     apm unpublish language-haiku@1.0.0
 
 Or:
+    install atom: conda install atom
+    
 
     apm publish minor
-    # luego Atom con Python 2.7 , no con 3.7 
+    cd ~/.atom/packages
+    conda deactivate
+    apm config set python /usr/local/bin/python2
+    apm install language-haiku
+#    cd language-haiku
+#    node -v
+#    atom -v
+#    nvm install 10.11.0
+#    npm install
+    # luego Atom con Python 2.7 , no con 3.
