@@ -10,10 +10,6 @@ scopes:
     'block > camel_identifier': 'keyword.control'
     'block > pascal_identifier': 'support.storage.type'
 
-    'property > camel_identifier': 'entity.name.tag'
-    'property_type > camel_identifier': 'support.storage.type'
-    'property_type > pascal_identifier': 'support.storage.type'
-
     'generic > "<"': 'storage.modifier'
     'generic > ">"': 'storage.modifier'
 

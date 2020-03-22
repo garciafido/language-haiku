@@ -11,34 +11,34 @@
     prefix: 'workflow'
     body: """
       workflow $1 {
-        ${2:initialized}: State
-        ${3:started}: State
+        state ${2:initialized}
+        state ${3:started}
         $0
 
-        ${4:start}: Transition<${2:initialized}, ${3:started}>
+        transition ${4:start}<${2:initialized}, ${3:started}>
       }
     """
     description: 'Workflowty Definition'
   'Property':
     prefix: 'prop'
     body: """
-      $1: $2
+      field $1($2)
       $0
     """
     description: 'Property'
   'Reference property':
     prefix: 'ref'
     body: """
-      $1: <ref>$2
+      field $1<ref>($2)
       $0
     """
     description: 'Reference property'
   'Tabs':
     prefix: 'tabs'
     body: """
-      ${1:tabs}: Tabs {
+      tabs ${1:tabs} {
         @label('${2/(.+)/\\u$1/}')
-        ${2:main}: Tab {
+        tab ${2:main} {
             $0
         }
       }
@@ -48,8 +48,8 @@
     prefix: 'tab'
     body: """
         @label('${1/(.+)/\\u$1/}')
-        $1: Tab {
+        tab $1 {
             $0
         }
     """
-    description: 'Tabs'
+    description: 'Tab'
