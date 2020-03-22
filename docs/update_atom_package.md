@@ -14,17 +14,26 @@ Examples:
     apm unpublish language-haiku@1.0.0
 
 Or:
-    install atom: conda install atom
-    
-
     apm publish minor
-    cd ~/.atom/packages
-    conda deactivate
-    apm config set python /usr/local/bin/python2
-    apm install language-haiku
-#    cd language-haiku
-#    node -v
-#    atom -v
-#    nvm install 10.11.0
-#    npm install
-    # luego Atom con Python 2.7 , no con 3.
+    
+--------------------------------------------------------
+Remove atom
+rm -rf ~/.atom ~/Library/Preferences/com.github.atom.helper.plist ~/Library/Preferences/com.github.atom.plist /Applications/Atom.app /Applications/Atom\ Beta.app /usr/local/bin/atom /usr/local/bin/atom-beta /usr/local/bin/apm /usr/local/bin/apm-beta ~/Library/Application\ Support/Atom/ ~/Library/Application\ Support/com.github.atom.ShipIt ~/Library/Saved\ Application\ State/com.github.atom.savedState ~/Library/Caches/com.github.atom.ShipIt/ ~/Library/Caches/com.github.atom ~/Library/Caches/Atom
+-------------------------------------------------------
+brew cask install atom
+nano /Applications/Atom.app/Contents/Resources/app/apm/bin/python-interceptor.sh
+
+
+    exec python "${ARGS[@]}"
+    ;;
+  *)
+    exec python "$@"
+    ;;
+
+====>
+
+    exec python2 "${ARGS[@]}"
+    ;;
+  *)
+    exec python2 "$@"
+    ;;
