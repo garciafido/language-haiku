@@ -9,7 +9,8 @@ scopes:
 
     'comment': 'comment.block'
 
-    'block_type > camel_identifier': 'constant.language'
+    'block > block > block_type > camel_identifier': 'constant.language'
+    'block > block_type > camel_identifier': 'entity.name.package'
     'block_name > camel_identifier': 'support.storage.type'
     'block_name > pascal_identifier': 'support.storage.type'
 
