@@ -9,7 +9,7 @@ scopes:
 
     'comment': 'comment.block'
 
-    'block > camel_identifier': 'keyword.struct'
+    'block > camel_identifier': 'variable.other.object.property'
     'block > pascal_identifier': 'support.storage.type'
 
     'generic > "<"': 'storage.modifier'
