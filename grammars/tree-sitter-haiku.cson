@@ -5,9 +5,11 @@ parser: 'tree-sitter-haiku'
 fileTypes: ['hk', 'haiku']
 
 scopes:
-    'program': 'source.hk'
+    'program': 'source.haiku'
 
-    'block > camel_identifier': 'keyword.control'
+    'comment': 'comment.block'
+
+    'block > camel_identifier': 'keyword.struct'
     'block > pascal_identifier': 'support.storage.type'
 
     'generic > "<"': 'storage.modifier'
@@ -17,9 +19,39 @@ scopes:
 
     'function_call > identifier': 'entity.name.function'
 
-    '
-    ":"
-    ': 'keyword.operator'
+    '"entity"': 'keyword.function'
+    '"workflow"': 'keyword.function'
+
+    'camel_identifier': 'support.storage.type'
+    'pascal_identifier': 'variable.other.object.property'
+    'decorator_identifier': 'entity.name.package'
+
+    'simple_string': 'string.quoted.double'
+    'template_string': 'string.quoted.template'
+    'escape_sequence': 'constant.character.escape'
+    'template_substitution': 'constant.other.rune'
+    'integer': 'constant.numeric.integer'
+    'float': 'constant.numeric.float'
+    'false': 'constant.language.false'
+    'true': 'constant.language.true'
+
+    '":"': 'keyword.operator'
+    '"+"': 'keyword.operator'
+    '"-"': 'keyword.operator'
+    '"*"': 'keyword.operator'
+    '"/"': 'keyword.operator'
+    '"%"': 'keyword.operator'
+    '"=="': 'keyword.operator'
+    '"!="': 'keyword.operator'
+    '">"': 'keyword.operator'
+    '"<"': 'keyword.operator'
+    '">="': 'keyword.operator'
+    '"<="': 'keyword.operator'
+    '"!"': 'keyword.operator'
+    '"|"': 'keyword.operator'
+    '"&"': 'keyword.operator'
+    '"||"': 'keyword.operator'
+    '"&&"': 'keyword.operator'
 
 folds: [
     {
