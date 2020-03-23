@@ -9,8 +9,8 @@ scopes:
 
     'comment': 'comment.block'
 
-    'block > block_type': 'constant.language'
-    'block > block_name': 'support.storage.type'
+    'block_type': 'constant.language'
+    'block_name': 'support.storage.type'
 
     'generic > "<"': 'storage.modifier'
     'generic > ">"': 'storage.modifier'
@@ -18,9 +18,6 @@ scopes:
     'decorator > decorator_identifier': 'variable.other.object.property'
 
     'function_call > identifier': 'entity.name.function'
-
-    '"entity"': 'keyword.function'
-    '"workflow"': 'keyword.function'
 
     'camel_identifier': 'support.storage.type'
     'pascal_identifier': 'variable.other.object.property'
