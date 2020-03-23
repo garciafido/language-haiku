@@ -9,8 +9,8 @@ scopes:
 
     'comment': 'comment.block'
 
-    'block > camel_identifier': 'constant.language'
-    'block > pascal_identifier': 'support.storage.type'
+    'block > block_type': 'constant.language'
+    'block > block_name': 'support.storage.type'
 
     'generic > "<"': 'storage.modifier'
     'generic > ">"': 'storage.modifier'
