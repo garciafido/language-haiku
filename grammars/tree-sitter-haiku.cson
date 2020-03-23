@@ -9,13 +9,13 @@ scopes:
 
     'comment': 'comment.block'
 
-    'block > camel_identifier': 'variable.other.object.property'
+    'block > camel_identifier': 'constant.language'
     'block > pascal_identifier': 'support.storage.type'
 
     'generic > "<"': 'storage.modifier'
     'generic > ">"': 'storage.modifier'
 
-    'decorator > decorator_identifier': 'constant.language'
+    'decorator > decorator_identifier': 'variable.other.object.property'
 
     'function_call > identifier': 'entity.name.function'
 
